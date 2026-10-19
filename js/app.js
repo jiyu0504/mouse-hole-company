@@ -106,8 +106,8 @@
       window.scrollTo({top:0,behavior:"smooth"});
       if (viewId === "list") renderCafeList();
       if (viewId === "recent") renderIdList("recentCards", recentCafeIds, "최근 본 매장이 없습니다.");
-      if (viewId === "favorites") renderIdList("favoriteCards", favoriteCafeIds, "찜한 매장이 없습니다.");
-    }
+      if (viewId === "profile") renderIdList("favoriteCards", favoriteCafeIds, "찜한 카페가 없습니다.");
+      }
     function photoMarkup(cafe, className) {
       if (cafe.image) return `<div class="${className}" style="background-image:url('${escapeHtml(cafe.image)}');background-size:cover;background-position:center" role="img" aria-label="${escapeHtml(cafe.name)}"></div>`;
       return `<div class="${className}" aria-label="${escapeHtml(cafe.name)}">${cafe.emoji || "☕"}</div>`;
@@ -219,7 +219,7 @@
         const id = Number(favoriteButton.dataset.favorite);
         favoriteCafeIds = favoriteCafeIds.includes(id) ? favoriteCafeIds.filter(n=>n!==id) : [...favoriteCafeIds,id];
         renderHome(); renderCafeList();
-        if (currentView==="favorites") renderIdList("favoriteCards",favoriteCafeIds,"찜한 매장이 없습니다.");
+        if (currentView==="profile") renderIdList("favoriteCards",favoriteCafeIds,"찜한 매장이 없습니다.");
         toast(favoriteCafeIds.includes(id) ? "찜한 매장에 추가했어요." : "찜한 매장에서 삭제했어요.");
         return;
       }
