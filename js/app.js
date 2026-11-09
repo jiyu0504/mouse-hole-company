@@ -12,7 +12,7 @@
  * ※ fetch를 쓰므로 index.html을 더블클릭(file://)하지 말고 로컬 서버로 열어야 한다.
  */
 
-const DATA_FILES = { cafes: "../data/dog_cafes.json", places: "../data/outdoor_facilities.json" };
+const DATA_FILES = { cafes: "data/dog_cafes.json", places: "data/outdoor_facilities.json" };
 const PAGE_SIZE = 20;
 
 /* ---------- 필터 그룹 (필터 화면 / 와이어프레임 기준) ---------- */
