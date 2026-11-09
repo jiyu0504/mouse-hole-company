@@ -1,0 +1,3481 @@
+[
+  {
+    "id": 1,
+    "name": "강서 한강공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강서구",
+      "dong": "방화동",
+      "lotNumber": "47 번지",
+      "roadName": "양천로27길",
+      "buildingNumber": "279-23 번",
+      "zipCode": "07518",
+      "roadAddress": "서울특별시 강서구 양천로27길 279-23",
+      "jibunAddress": "서울특별시 강서구 방화동 47",
+      "lat": 37.58604147,
+      "lng": 126.817145
+    },
+    "contact": {
+      "phone": "02-3780-0621",
+      "homepage": "https://hangang.seoul.go.kr/archives/46788"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 2,
+    "name": "국기원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강남구",
+      "dong": "역삼동",
+      "lotNumber": "635 번지",
+      "roadName": "테헤란로7길",
+      "buildingNumber": "32 번",
+      "zipCode": "06130",
+      "roadAddress": "서울특별시 강남구 테헤란로7길 32",
+      "jibunAddress": "서울특별시 강남구 역삼동 635",
+      "lat": 37.50251536,
+      "lng": 127.030391
+    },
+    "contact": {
+      "phone": "02-567-1058",
+      "homepage": "www.kukkiwon.or.kr"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 하절기 09:00~18:30, 동절기 09:00~18:00",
+      "byDay": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null,
+        "sun": null
+      },
+      "parseStatus": "특이사항-원문확인"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형/중형",
+      "restrictions": "목줄, 배변봉투, 야외만 가능",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 3,
+    "name": "길마중길",
+    "category": "여행지",
+    "location": {
+      "sigungu": "서초구",
+      "dong": "잠원동",
+      "lotNumber": "84-3 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": null,
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 서초구 잠원동 84-3",
+      "lat": 37.51496793,
+      "lng": 127.015183
+    },
+    "contact": {
+      "phone": "02-2155-6860",
+      "homepage": "http://parks.seoul.go.kr/template/sub/namsan.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 4,
+    "name": "난지천공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "상암동",
+      "lotNumber": "1538 번지",
+      "roadName": "월드컵로",
+      "buildingNumber": "365 번",
+      "zipCode": "03900",
+      "roadAddress": "서울특별시 마포구 월드컵로 365",
+      "jibunAddress": "서울특별시 마포구 상암동 1538",
+      "lat": 37.57246315,
+      "lng": 126.887048
+    },
+    "contact": {
+      "phone": "02-2236-9134",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 5,
+    "name": "남산골한옥마을",
+    "category": "여행지",
+    "location": {
+      "sigungu": "중구",
+      "dong": "필동",
+      "lotNumber": "84-1 번지",
+      "roadName": "퇴계로34길",
+      "buildingNumber": "28 번",
+      "zipCode": "04626",
+      "roadAddress": "서울특별시 중구 퇴계로34길 28",
+      "jibunAddress": "서울특별시 중구 필동2가 84-1",
+      "lat": 37.55954227,
+      "lng": 126.994739
+    },
+    "contact": {
+      "phone": "02-2261-0517",
+      "homepage": "https://www.hanokmaeul.or.kr/"
+    },
+    "hours": {
+      "closedDays": "매주 월요일",
+      "text": "화~일 09:00~20:00",
+      "byDay": {
+        "mon": null,
+        "tue": "09:00-20:00",
+        "wed": "09:00-20:00",
+        "thu": "09:00-20:00",
+        "fri": "09:00-20:00",
+        "sat": "09:00-20:00",
+        "sun": "09:00-20:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 6,
+    "name": "남산공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "중구",
+      "dong": null,
+      "lotNumber": null,
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "04529",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 중구 회현동1가",
+      "lat": 37.55558921,
+      "lng": 126.981204
+    },
+    "contact": {
+      "phone": "02-3783-5900",
+      "homepage": "http://seoulnamsan.alltheway.kr/"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 7,
+    "name": "남산야외식물원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "용산구",
+      "dong": "이태원동",
+      "lotNumber": "259-16 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "04344",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 용산구 이태원동 259-16",
+      "lat": 37.54297029,
+      "lng": 126.994588
+    },
+    "contact": {
+      "phone": "02-798-3771",
+      "homepage": "https://parks.seoul.go.kr/template/sub/namsan.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 8,
+    "name": "마포새빛문화숲",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "당인동",
+      "lotNumber": "1 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "04082",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 마포구 당인동 1",
+      "lat": 37.54406242,
+      "lng": 126.919699
+    },
+    "contact": {
+      "phone": "02-3153-8114",
+      "homepage": "https://www.mapo.go.kr/site/main/home"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 9,
+    "name": "매헌시민의숲",
+    "category": "여행지",
+    "location": {
+      "sigungu": "서초구",
+      "dong": "양재동",
+      "lotNumber": "236 번지",
+      "roadName": "매헌로",
+      "buildingNumber": "99 번",
+      "zipCode": "06773",
+      "roadAddress": "서울특별시 서초구 매헌로 99",
+      "jibunAddress": "서울특별시 서초구 양재동 236",
+      "lat": 37.4730498,
+      "lng": 127.036977
+    },
+    "contact": {
+      "phone": "02-575-3895",
+      "homepage": "https://parks.seoul.go.kr/template/sub/citizen.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 10,
+    "name": "문화비축기지",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "성산동",
+      "lotNumber": "670 번지",
+      "roadName": "증산로",
+      "buildingNumber": "87 번",
+      "zipCode": "03914",
+      "roadAddress": "서울특별시 마포구 증산로 87",
+      "jibunAddress": "서울특별시 마포구 성산동 670",
+      "lat": 37.57034669,
+      "lng": 126.895031
+    },
+    "contact": {
+      "phone": "02-376-8410",
+      "homepage": "http://parks.seoul.go.kr/culturetank"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 11,
+    "name": "반포 한강공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "서초구",
+      "dong": "반포동",
+      "lotNumber": "115-5 번지",
+      "roadName": "신반포로11길",
+      "buildingNumber": "40 번",
+      "zipCode": "06500",
+      "roadAddress": "서울특별시 서초구 신반포로11길 40",
+      "jibunAddress": "서울특별시 서초구 반포동 115-5",
+      "lat": 37.50769397,
+      "lng": 126.992731
+    },
+    "contact": {
+      "phone": "02-591-5943",
+      "homepage": "http://hangang.seoul.go.kr/archives/46727"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 12,
+    "name": "발바닥공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "도봉구",
+      "dong": "방학동",
+      "lotNumber": "270-1 번지",
+      "roadName": "시루봉로6길",
+      "buildingNumber": "33 번",
+      "zipCode": "01387",
+      "roadAddress": "서울특별시 도봉구 시루봉로6길 33",
+      "jibunAddress": "서울특별시 도봉구 방학동 270-1",
+      "lat": 37.65960856,
+      "lng": 127.029715
+    },
+    "contact": {
+      "phone": "02-2091-2120",
+      "homepage": "https://tour.dobong.go.kr/Contents.asp?code=10003477"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 13,
+    "name": "방이동고분군",
+    "category": "여행지",
+    "location": {
+      "sigungu": "송파구",
+      "dong": "방이동",
+      "lotNumber": "227-13 번지",
+      "roadName": "오금로",
+      "buildingNumber": "227 번",
+      "zipCode": "05644",
+      "roadAddress": "서울특별시 송파구 오금로 227",
+      "jibunAddress": "서울특별시 송파구 방이동 227-13",
+      "lat": 37.50712613,
+      "lng": 127.118957
+    },
+    "contact": {
+      "phone": "02-2147-2800",
+      "homepage": "http://www.songpa.go.kr/"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 06:00~20:00",
+      "byDay": {
+        "mon": "06:00-20:00",
+        "tue": "06:00-20:00",
+        "wed": "06:00-20:00",
+        "thu": "06:00-20:00",
+        "fri": "06:00-20:00",
+        "sat": "06:00-20:00",
+        "sun": "06:00-20:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 14,
+    "name": "보라매공원 반려견놀이터",
+    "category": "여행지",
+    "location": {
+      "sigungu": "동작구",
+      "dong": "신대방동",
+      "lotNumber": "722 번지",
+      "roadName": "여의대방로20길",
+      "buildingNumber": "33 번",
+      "zipCode": "07062",
+      "roadAddress": "서울특별시 동작구 여의대방로20길 33",
+      "jibunAddress": "서울특별시 동작구 신대방동 722",
+      "lat": 37.49489212,
+      "lng": 126.919491
+    },
+    "contact": {
+      "phone": "02-2124-2835",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원, 강아지놀이터, 13세 미만 보호자 동반 필수"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "Y",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "Y",
+      "registrationRequired": "Y",
+      "estrusRestriction": "Y",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "반려동물 등록, 목줄, 배변봉투, 맹견, 질병, 발정기인 경우 입장 불가",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 15,
+    "name": "북서울꿈의숲",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강북구",
+      "dong": "번동",
+      "lotNumber": "90 번지",
+      "roadName": "월계로",
+      "buildingNumber": "173 번",
+      "zipCode": "01228",
+      "roadAddress": "서울특별시 강북구 월계로 173",
+      "jibunAddress": "서울특별시 강북구 번동 90",
+      "lat": 37.62025446,
+      "lng": 127.044325
+    },
+    "contact": {
+      "phone": "02-2289-4001",
+      "homepage": "http://parks.seoul.go.kr/template/sub/dreamforest.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 16,
+    "name": "북촌문화센터",
+    "category": "여행지",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "계동",
+      "lotNumber": "105 번지",
+      "roadName": "계동길",
+      "buildingNumber": "37 번",
+      "zipCode": "03059",
+      "roadAddress": "서울특별시 종로구 계동길 37",
+      "jibunAddress": "서울특별시 종로구 계동 105",
+      "lat": 37.57908833,
+      "lng": 126.986276
+    },
+    "contact": {
+      "phone": "02-2133-1371",
+      "homepage": "https://hanok.seoul.go.kr/front/kor/exp/expCenter.do?tab=1"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "월~금 9:00~18:00, 토~일 9:00~17:00",
+      "byDay": {
+        "mon": "09:00-18:00",
+        "tue": "09:00-18:00",
+        "wed": "09:00-18:00",
+        "thu": "09:00-18:00",
+        "fri": "09:00-18:00",
+        "sat": "09:00-17:00",
+        "sun": "09:00-17:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "N",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 17,
+    "name": "서울교육박물관",
+    "category": "박물관",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "화동",
+      "lotNumber": "2 번지",
+      "roadName": "북촌로5길",
+      "buildingNumber": "48 번",
+      "zipCode": "03055",
+      "roadAddress": "서울특별시 종로구 북촌로5길 48",
+      "jibunAddress": "서울특별시 종로구 화동 2",
+      "lat": 37.58126545,
+      "lng": 126.98387
+    },
+    "contact": {
+      "phone": "02-2011-5780",
+      "homepage": "http://edumuseum.sen.go.kr"
+    },
+    "hours": {
+      "closedDays": "법정공휴일, 1, 3째주 수요일",
+      "text": "월~금 09:00~18:00, 토~일 09:00~17:00",
+      "byDay": {
+        "mon": "09:00-18:00",
+        "tue": "09:00-18:00",
+        "wed": "09:00-18:00",
+        "thu": "09:00-18:00",
+        "fri": "09:00-18:00",
+        "sat": "09:00-17:00",
+        "sun": "09:00-17:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "박물관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "Y",
+      "strollerDiaper": "Y",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "안고 있어야 함, 기저귀, 유모차",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 18,
+    "name": "서울숲",
+    "category": "여행지",
+    "location": {
+      "sigungu": "성동구",
+      "dong": "성수1가1동",
+      "lotNumber": "685-20 번지",
+      "roadName": "뚝섬로",
+      "buildingNumber": "273 번",
+      "zipCode": "04770",
+      "roadAddress": "서울특별시 성동구 뚝섬로 273",
+      "jibunAddress": "서울특별시 성동구 성수동1가 685-20",
+      "lat": 37.54307015,
+      "lng": 127.041799
+    },
+    "contact": {
+      "phone": "02-460-2905",
+      "homepage": "http://seoulforest.or.kr/"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 05:30~21:30",
+      "byDay": {
+        "mon": "05:30-21:30",
+        "tue": "05:30-21:30",
+        "wed": "05:30-21:30",
+        "thu": "05:30-21:30",
+        "fri": "05:30-21:30",
+        "sat": "05:30-21:30",
+        "sun": "05:30-21:30"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 19,
+    "name": "서울식물원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강서구",
+      "dong": "마곡동",
+      "lotNumber": "812 번지",
+      "roadName": "마곡동로",
+      "buildingNumber": "161 번",
+      "zipCode": "07789",
+      "roadAddress": "서울특별시 강서구 마곡동로 161",
+      "jibunAddress": "서울특별시 강서구 마곡동 812",
+      "lat": 37.57224441,
+      "lng": 126.832843
+    },
+    "contact": {
+      "phone": "02-2104-9716",
+      "homepage": "https://botanicpark.seoul.go.kr/front/main.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 09:30~18:00",
+      "byDay": {
+        "mon": "09:30-18:00",
+        "tue": "09:30-18:00",
+        "wed": "09:30-18:00",
+        "thu": "09:30-18:00",
+        "fri": "09:30-18:00",
+        "sat": "09:30-18:00",
+        "sun": "09:30-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "5000원",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 20,
+    "name": "선유도근린공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "영등포구",
+      "dong": "당산동",
+      "lotNumber": "1 번지",
+      "roadName": "선유로",
+      "buildingNumber": "343 번",
+      "zipCode": "07200",
+      "roadAddress": "서울특별시 영등포구 선유로 343",
+      "jibunAddress": "서울특별시 영등포구 당산동 1",
+      "lat": 37.54238323,
+      "lng": 126.901819
+    },
+    "contact": {
+      "phone": "02-2631-9368",
+      "homepage": "http://parks.seoul.go.kr/seonyudo"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 06:00~24:00",
+      "byDay": {
+        "mon": "06:00-24:00",
+        "tue": "06:00-24:00",
+        "wed": "06:00-24:00",
+        "thu": "06:00-24:00",
+        "fri": "06:00-24:00",
+        "sat": "06:00-24:00",
+        "sun": "06:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 21,
+    "name": "아시아공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "송파구",
+      "dong": "잠실동",
+      "lotNumber": "84 번지",
+      "roadName": "올림픽로",
+      "buildingNumber": "44 번",
+      "zipCode": "05572",
+      "roadAddress": "서울특별시 송파구 올림픽로 44",
+      "jibunAddress": "서울특별시 송파구 잠실동 84",
+      "lat": 37.51068239,
+      "lng": 127.075937
+    },
+    "contact": {
+      "phone": "02-412-0270",
+      "homepage": "https://parks.seoul.go.kr/parks/detailView.do?pIdx=81"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 22,
+    "name": "아차산생태공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "광진구",
+      "dong": "광장동",
+      "lotNumber": "5-117 번지",
+      "roadName": "워커힐로",
+      "buildingNumber": "127 번",
+      "zipCode": "04965",
+      "roadAddress": "서울특별시 광진구 워커힐로 127",
+      "jibunAddress": "서울특별시 광진구 광장동 5-117",
+      "lat": 37.55189708,
+      "lng": 127.101246
+    },
+    "contact": {
+      "phone": "02-450-1192",
+      "homepage": "https://www.gwangjin.go.kr"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 23,
+    "name": "양재천근린공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "서초구",
+      "dong": "양재동",
+      "lotNumber": "261-23 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "06777",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 서초구 양재동 261-23",
+      "lat": 37.47662396,
+      "lng": 127.041508
+    },
+    "contact": {
+      "phone": "02-2155-6896",
+      "homepage": "https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=09d42fc7-cfd1-4af5-91ca-7d45e7bf9c36&big_category=A02&mid_category=A0202&big_area=1"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 24,
+    "name": "여의도 이랜드크루즈",
+    "category": "여행지",
+    "location": {
+      "sigungu": "영등포구",
+      "dong": "여의도동",
+      "lotNumber": "85-1 번지",
+      "roadName": "여의동로",
+      "buildingNumber": "290 번",
+      "zipCode": "07337",
+      "roadAddress": "서울특별시 영등포구 여의동로 290",
+      "jibunAddress": "서울특별시 영등포구 여의도동 85-1",
+      "lat": 37.52581426,
+      "lng": 126.93841
+    },
+    "contact": {
+      "phone": "02-6291-6900",
+      "homepage": "http://www.elandcruise.com/"
+    },
+    "hours": {
+      "closedDays": "매주 월요일",
+      "text": "시설에 따라 변동",
+      "byDay": {
+        "mon": null,
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null,
+        "sun": null
+      },
+      "parseStatus": "특이사항-원문확인"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "변동",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "Y",
+      "mustBeHeld": "Y",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형/중형",
+      "restrictions": "케이지, 안기",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 25,
+    "name": "영인문학관",
+    "category": "박물관",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "평창동",
+      "lotNumber": "499-3 번지",
+      "roadName": "평창30길",
+      "buildingNumber": "81 번",
+      "zipCode": "03004",
+      "roadAddress": "서울특별시 종로구 평창30길 81",
+      "jibunAddress": "서울특별시 종로구 평창동 499-3",
+      "lat": 37.61189247,
+      "lng": 126.971758
+    },
+    "contact": {
+      "phone": "02-379-3182",
+      "homepage": "young-in.kr"
+    },
+    "hours": {
+      "closedDays": "매주 화~일",
+      "text": "월 10:30~17:00",
+      "byDay": {
+        "mon": "10:30-17:00",
+        "tue": null,
+        "wed": null,
+        "thu": null,
+        "fri": null,
+        "sat": null,
+        "sun": null
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "6000원",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "박물관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "야외만 반려동물 동반 가능",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 26,
+    "name": "오금근린공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "송파구",
+      "dong": "오금동",
+      "lotNumber": "51 번지",
+      "roadName": "오금로",
+      "buildingNumber": "363 번",
+      "zipCode": "05725",
+      "roadAddress": "서울특별시 송파구 오금로 363",
+      "jibunAddress": "서울특별시 송파구 오금동 51",
+      "lat": 37.50519118,
+      "lng": 127.131653
+    },
+    "contact": {
+      "phone": "02-2147-3380",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 27,
+    "name": "올림픽공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "송파구",
+      "dong": "방이동",
+      "lotNumber": "88 번지",
+      "roadName": "올림픽로",
+      "buildingNumber": "424 번",
+      "zipCode": "05540",
+      "roadAddress": "서울특별시 송파구 올림픽로 424",
+      "jibunAddress": "서울특별시 송파구 방이동 88",
+      "lat": 37.5203397,
+      "lng": 127.115518
+    },
+    "contact": {
+      "phone": "02-410-1114",
+      "homepage": "www.ksponco.or.kr/olympicpark"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 05:00~22:00",
+      "byDay": {
+        "mon": "05:00-22:00",
+        "tue": "05:00-22:00",
+        "wed": "05:00-22:00",
+        "thu": "05:00-22:00",
+        "fri": "05:00-22:00",
+        "sat": "05:00-22:00",
+        "sun": "05:00-22:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "N",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형/대형",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 28,
+    "name": "용마랜드",
+    "category": "여행지",
+    "location": {
+      "sigungu": "중랑구",
+      "dong": "망우동",
+      "lotNumber": "69-1 번지",
+      "roadName": "망우로70길",
+      "buildingNumber": "118 번",
+      "zipCode": "02180",
+      "roadAddress": "서울특별시 중랑구 망우로70길 118",
+      "jibunAddress": "서울특별시 중랑구 망우동 산 69-1",
+      "lat": 37.59451469,
+      "lng": 127.10453
+    },
+    "contact": {
+      "phone": "02-436-5800",
+      "homepage": "https://cafe.naver.com/yongmaland/"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 10:00~18:00",
+      "byDay": {
+        "mon": "10:00-18:00",
+        "tue": "10:00-18:00",
+        "wed": "10:00-18:00",
+        "thu": "10:00-18:00",
+        "fri": "10:00-18:00",
+        "sat": "10:00-18:00",
+        "sun": "10:00-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "10000원",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 29,
+    "name": "용마폭포공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "중랑구",
+      "dong": "면목동",
+      "lotNumber": "1382 번지",
+      "roadName": "용마산로",
+      "buildingNumber": "250 번",
+      "zipCode": "02257",
+      "roadAddress": "서울특별시 중랑구 용마산로 250",
+      "jibunAddress": "서울특별시 중랑구 면목동 1382",
+      "lat": 37.57492985,
+      "lng": 127.088973
+    },
+    "contact": {
+      "phone": "02-2094-2965",
+      "homepage": "https://www.jungnang.go.kr/portal/main/contents.do?menuNo=200599"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 30,
+    "name": "용산가족공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "용산구",
+      "dong": "서빙고동",
+      "lotNumber": "168-6 번지",
+      "roadName": "서빙고로",
+      "buildingNumber": "137 번",
+      "zipCode": "04383",
+      "roadAddress": "서울특별시 용산구 서빙고로 137",
+      "jibunAddress": "서울특별시 용산구 용산동6가 168-6",
+      "lat": 37.52470224,
+      "lng": 126.97774
+    },
+    "contact": {
+      "phone": "02-792-5661",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 31,
+    "name": "우이천 벚꽃길 산책로",
+    "category": "여행지",
+    "location": {
+      "sigungu": "도봉구",
+      "dong": "창동",
+      "lotNumber": "635-42 번지",
+      "roadName": "우이천로20길",
+      "buildingNumber": "7 번",
+      "zipCode": "01462",
+      "roadAddress": "서울특별시 도봉구 우이천로20길 7",
+      "jibunAddress": "서울특별시 도봉구 창동 635-42",
+      "lat": 37.64173321,
+      "lng": 127.034772
+    },
+    "contact": {
+      "phone": "02-901-6944",
+      "homepage": "https://www.gangbuk.go.kr/www/contents.do?key=705"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 32,
+    "name": "월드컵공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "상암동",
+      "lotNumber": "481-6 번지",
+      "roadName": "하늘공원로",
+      "buildingNumber": "86 번",
+      "zipCode": "03900",
+      "roadAddress": "서울특별시 마포구 하늘공원로 86",
+      "jibunAddress": "서울특별시 마포구 상암동 481-6",
+      "lat": 37.57159797,
+      "lng": 126.881674
+    },
+    "contact": {
+      "phone": "02-300-5500",
+      "homepage": "http://parks.seoul.go.kr/template/sub/worldcuppark.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 33,
+    "name": "월드컵공원반려견놀이터",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "상암동",
+      "lotNumber": "1535 번지",
+      "roadName": "증산로",
+      "buildingNumber": "32 번",
+      "zipCode": "03901",
+      "roadAddress": "서울특별시 마포구 증산로 32",
+      "jibunAddress": "서울특별시 마포구 상암동 1535",
+      "lat": 37.56410596,
+      "lng": 126.892347
+    },
+    "contact": {
+      "phone": "02-2124-2835",
+      "homepage": "https://animal.seoul.go.kr/animalplay/2"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 34,
+    "name": "율현공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강남구",
+      "dong": "율현동",
+      "lotNumber": "77-2 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "06377",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 강남구 율현동 77-2",
+      "lat": 37.47252883,
+      "lng": 127.115295
+    },
+    "contact": {
+      "phone": "02-459-9452",
+      "homepage": "https://parks.seoul.go.kr/parks/detailView.do?pIdx=1381"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 35,
+    "name": "은평역사한옥박물관",
+    "category": "박물관",
+    "location": {
+      "sigungu": "은평구",
+      "dong": "진관동",
+      "lotNumber": "135-5 번지",
+      "roadName": "연서로50길",
+      "buildingNumber": "8 번",
+      "zipCode": "03308",
+      "roadAddress": "서울특별시 은평구 연서로50길 8",
+      "jibunAddress": "서울특별시 은평구 진관동 135-5",
+      "lat": 37.64033363,
+      "lng": 126.938008
+    },
+    "contact": {
+      "phone": "02-351-8524",
+      "homepage": "museum.ep.go.kr"
+    },
+    "hours": {
+      "closedDays": "1월1일, 설, 추석 당일, 매주 월요일",
+      "text": "화~일 09:00~18:00",
+      "byDay": {
+        "mon": null,
+        "tue": "09:00-18:00",
+        "wed": "09:00-18:00",
+        "thu": "09:00-18:00",
+        "fri": "09:00-18:00",
+        "sat": "09:00-18:00",
+        "sun": "09:00-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "1000원",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "박물관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "야외만 반려동물 동반 가능",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 36,
+    "name": "이화마을",
+    "category": "여행지",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "동숭동",
+      "lotNumber": "199-10 번지",
+      "roadName": "이화장길",
+      "buildingNumber": "70-11 번",
+      "zipCode": "03088",
+      "roadAddress": "서울특별시 종로구 이화장길 70-11",
+      "jibunAddress": "서울특별시 종로구 동숭동 199-10",
+      "lat": 37.57868429,
+      "lng": 127.005078
+    },
+    "contact": {
+      "phone": "02-120",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 37,
+    "name": "일자산자연공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "강동구",
+      "dong": "둔촌동",
+      "lotNumber": "산 140 번지",
+      "roadName": "동남로",
+      "buildingNumber": "660 번",
+      "zipCode": "05357",
+      "roadAddress": "서울특별시 강동구 동남로 660",
+      "jibunAddress": "서울특별시 강동구 둔촌동 산 140",
+      "lat": 37.53301963,
+      "lng": 127.151356
+    },
+    "contact": {
+      "phone": "02-3425-6443",
+      "homepage": "https://parks.seoul.go.kr/parks/detailView.do?pIdx=112"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 38,
+    "name": "중랑캠핑숲잔디광장",
+    "category": "여행지",
+    "location": {
+      "sigungu": "중랑구",
+      "dong": "망우동",
+      "lotNumber": "56 번지",
+      "roadName": "송림길",
+      "buildingNumber": "172 번",
+      "zipCode": "02062",
+      "roadAddress": "서울특별시 중랑구 송림길 172",
+      "jibunAddress": "서울특별시 중랑구 망우동 56",
+      "lat": 37.60686128,
+      "lng": 127.110697
+    },
+    "contact": {
+      "phone": "02-435-7168",
+      "homepage": "https://parks.seoul.go.kr/template/sub/JungnangCampGround.do"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 39,
+    "name": "청와대",
+    "category": "여행지",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "청운효자동",
+      "lotNumber": "1 번지",
+      "roadName": "청와대로",
+      "buildingNumber": "1 번",
+      "zipCode": "03048",
+      "roadAddress": "서울특별시 종로구 청와대로 1",
+      "jibunAddress": "서울특별시 종로구 세종로 1",
+      "lat": 37.58647569,
+      "lng": 126.974937
+    },
+    "contact": {
+      "phone": "1522-7760",
+      "homepage": "https://www.opencheongwadae.kr/intro-main/index#none"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 07:00~19:00",
+      "byDay": {
+        "mon": "07:00-19:00",
+        "tue": "07:00-19:00",
+        "wed": "07:00-19:00",
+        "thu": "07:00-19:00",
+        "fri": "07:00-19:00",
+        "sat": "07:00-19:00",
+        "sun": "07:00-19:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "N",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "Y",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형",
+      "restrictions": "목줄, 케이지",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 40,
+    "name": "초안산근린공원 반려견 놀이터",
+    "category": "여행지",
+    "location": {
+      "sigungu": "도봉구",
+      "dong": "창동",
+      "lotNumber": "137-6 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "01453",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 도봉구 창동 산 137-6",
+      "lat": 37.64529446,
+      "lng": 127.043146
+    },
+    "contact": {
+      "phone": "02-906-7979",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 10:00~19:00",
+      "byDay": {
+        "mon": "10:00-19:00",
+        "tue": "10:00-19:00",
+        "wed": "10:00-19:00",
+        "thu": "10:00-19:00",
+        "fri": "10:00-19:00",
+        "sat": "10:00-19:00",
+        "sun": "10:00-19:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "N",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "Y",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "Y",
+      "registrationRequired": "Y",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형",
+      "restrictions": "맹견류, 전염성 있는 경우 입장 제한, 목줄, 배변봉투, 동물등록 필수",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 41,
+    "name": "초안산생태공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "도봉구",
+      "dong": "창동",
+      "lotNumber": "158 번지",
+      "roadName": null,
+      "buildingNumber": null,
+      "zipCode": "01453",
+      "roadAddress": null,
+      "jibunAddress": "서울특별시 도봉구 창동 산 158",
+      "lat": 37.64717178,
+      "lng": 127.045951
+    },
+    "contact": {
+      "phone": "02-2091-3765",
+      "homepage": "https://tour.dobong.go.kr/Contents.asp?code=10003485"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 42,
+    "name": "평화의 공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "상암동",
+      "lotNumber": "1535 번지",
+      "roadName": "증산로",
+      "buildingNumber": "32 번",
+      "zipCode": "03901",
+      "roadAddress": "서울특별시 마포구 증산로 32",
+      "jibunAddress": "서울특별시 마포구 상암동 1535",
+      "lat": 37.56410596,
+      "lng": 126.892347
+    },
+    "contact": {
+      "phone": "02-300-5576",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 43,
+    "name": "푸른수목원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "구로구",
+      "dong": "항동",
+      "lotNumber": "31 번지",
+      "roadName": "연동로",
+      "buildingNumber": "240 번",
+      "zipCode": "08361",
+      "roadAddress": "서울특별시 구로구 연동로 240",
+      "jibunAddress": "서울특별시 구로구 항동 31",
+      "lat": 37.48196844,
+      "lng": 126.823669
+    },
+    "contact": {
+      "phone": "02-2686-3200",
+      "homepage": "http://parks.seoul.go.kr/pureun"
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 05:00~22:00",
+      "byDay": {
+        "mon": "05:00-22:00",
+        "tue": "05:00-22:00",
+        "wed": "05:00-22:00",
+        "thu": "05:00-22:00",
+        "fri": "05:00-22:00",
+        "sat": "05:00-22:00",
+        "sun": "05:00-22:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "관광지"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 44,
+    "name": "하늘공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "마포구",
+      "dong": "상암동",
+      "lotNumber": "481-72 번지",
+      "roadName": "하늘공원로",
+      "buildingNumber": "95 번",
+      "zipCode": "03900",
+      "roadAddress": "서울특별시 마포구 하늘공원로 95",
+      "jibunAddress": "서울특별시 마포구 상암동 481-72",
+      "lat": 37.56907948,
+      "lng": 126.886318
+    },
+    "contact": {
+      "phone": "02-300-5501",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 05:00~22:00",
+      "byDay": {
+        "mon": "05:00-22:00",
+        "tue": "05:00-22:00",
+        "wed": "05:00-22:00",
+        "thu": "05:00-22:00",
+        "fri": "05:00-22:00",
+        "sat": "05:00-22:00",
+        "sun": "05:00-22:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "Y",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄, 배변봉투",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 45,
+    "name": "향림근린공원",
+    "category": "여행지",
+    "location": {
+      "sigungu": "은평구",
+      "dong": "진관동",
+      "lotNumber": "362 번지",
+      "roadName": "진관1로",
+      "buildingNumber": "40 번",
+      "zipCode": "03311",
+      "roadAddress": "서울특별시 은평구 진관1로 40",
+      "jibunAddress": "서울특별시 은평구 진관동 362",
+      "lat": 37.63044073,
+      "lng": 126.923581
+    },
+    "contact": {
+      "phone": "02-351-8002",
+      "homepage": null
+    },
+    "hours": {
+      "closedDays": "연중무휴",
+      "text": "매일 00:00~24:00",
+      "byDay": {
+        "mon": "00:00-24:00",
+        "tue": "00:00-24:00",
+        "wed": "00:00-24:00",
+        "thu": "00:00-24:00",
+        "fri": "00:00-24:00",
+        "sat": "00:00-24:00",
+        "sun": "00:00-24:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "공원"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "Y",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "목줄",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 46,
+    "name": "대림미술관",
+    "category": "여행지",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "통의동",
+      "lotNumber": "35-1 번지",
+      "roadName": "자하문로4길",
+      "buildingNumber": "21 번",
+      "zipCode": "03044",
+      "roadAddress": "서울특별시 종로구 자하문로4길 21",
+      "jibunAddress": "서울특별시 종로구 통의동 35-1",
+      "lat": 37.57750388,
+      "lng": 126.973364
+    },
+    "contact": {
+      "phone": "02-720-0667",
+      "homepage": "http://www.daelimmuseum.org/index.do"
+    },
+    "hours": {
+      "closedDays": "추석연휴, 매주 월요일",
+      "text": "화~일 10:00~18:00",
+      "byDay": {
+        "mon": "휴무",
+        "tue": "10:00-18:00",
+        "wed": "10:00-18:00",
+        "thu": "10:00-18:00",
+        "fri": "10:00-18:00",
+        "sat": "10:00-18:00",
+        "sun": "10:00-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "변동",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "미술관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "N"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "Y",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "N",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "소형/중형",
+      "restrictions": "전시장 내부 케이지 이용, 입장전 문의",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 47,
+    "name": "사비나미술관",
+    "category": "여행지",
+    "location": {
+      "sigungu": "은평구",
+      "dong": "진관동",
+      "lotNumber": "9999-2 번지",
+      "roadName": "진관1로",
+      "buildingNumber": "93 번",
+      "zipCode": "03310",
+      "roadAddress": "서울특별시 은평구 진관1로 93",
+      "jibunAddress": "서울특별시 은평구 진관동 9999-2",
+      "lat": 37.63012857,
+      "lng": 126.929276
+    },
+    "contact": {
+      "phone": "02-736-4371",
+      "homepage": "www.savinamuseum.com"
+    },
+    "hours": {
+      "closedDays": "매주 월요일",
+      "text": "화~일 09:30~18:30",
+      "byDay": {
+        "mon": "휴무",
+        "tue": "09:30-18:30",
+        "wed": "09:30-18:30",
+        "thu": "09:30-18:30",
+        "fri": "09:30-18:30",
+        "sat": "09:30-18:30",
+        "sun": "09:30-18:30"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "7000원",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "미술관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "야외만 반려동물 동반 가능",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 48,
+    "name": "성북구립미술관",
+    "category": "여행지",
+    "location": {
+      "sigungu": "성북구",
+      "dong": "성북동",
+      "lotNumber": "246 번지",
+      "roadName": "성북로",
+      "buildingNumber": "134 번",
+      "zipCode": "02837",
+      "roadAddress": "서울특별시 성북구 성북로 134",
+      "jibunAddress": "서울특별시 성북구 성북동 246",
+      "lat": 37.5948372,
+      "lng": 126.994887
+    },
+    "contact": {
+      "phone": "02-6925-5011",
+      "homepage": "http://sma.sbculture.or.kr/,"
+    },
+    "hours": {
+      "closedDays": "1월1일, 설, 추석 당일, 매주 월요일",
+      "text": "화~일 10:00~18:00",
+      "byDay": {
+        "mon": "휴무",
+        "tue": "10:00-18:00",
+        "wed": "10:00-18:00",
+        "thu": "10:00-18:00",
+        "fri": "10:00-18:00",
+        "sat": "10:00-18:00",
+        "sun": "10:00-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "N",
+      "admissionFee": "없음",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "미술관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "야외만 반려동물 동반 가능",
+      "extraFee": "없음"
+    }
+  },
+  {
+    "id": 49,
+    "name": "종로구립 고희동미술관",
+    "category": "여행지",
+    "location": {
+      "sigungu": "종로구",
+      "dong": "원서동",
+      "lotNumber": "16 번지",
+      "roadName": "창덕궁5길",
+      "buildingNumber": "40 번",
+      "zipCode": "03051",
+      "roadAddress": "서울특별시 종로구 창덕궁5길 40",
+      "jibunAddress": "서울특별시 종로구 원서동 16",
+      "lat": 37.58318551,
+      "lng": 126.988885
+    },
+    "contact": {
+      "phone": "02-741-8424",
+      "homepage": "https://www.jfac.or.kr/site/main/home"
+    },
+    "hours": {
+      "closedDays": "매주 월요일",
+      "text": "화~일 10:00~18:00",
+      "byDay": {
+        "mon": "휴무",
+        "tue": "10:00-18:00",
+        "wed": "10:00-18:00",
+        "thu": "10:00-18:00",
+        "fri": "10:00-18:00",
+        "sat": "10:00-18:00",
+        "sun": "10:00-18:00"
+      },
+      "parseStatus": "자동분류"
+    },
+    "facility": {
+      "parking": "Y",
+      "admissionFee": "변동",
+      "indoor": "N",
+      "outdoor": "Y",
+      "petOnly": "해당없음",
+      "description": "미술관"
+    },
+    "conditions": {
+      "petAllowed": "Y",
+      "size": {
+        "small": "Y",
+        "medium": "Y",
+        "large": "Y"
+      },
+      "extraFee": "N",
+      "leash": "N",
+      "poopBag": "N",
+      "mannerBelt": "N",
+      "carrier": "N",
+      "mustBeHeld": "N",
+      "strollerDiaper": "N",
+      "dangerousBreedBan": "N",
+      "aggressionBarking": "N",
+      "vaccinationDisease": "N",
+      "registrationRequired": "N",
+      "estrusRestriction": "N",
+      "outdoorOnly": "Y",
+      "zoneRestriction": "N",
+      "maxPets": "N"
+    },
+    "originalText": {
+      "size": "모두 가능",
+      "restrictions": "야외만 반려동물 동반 가능",
+      "extraFee": "없음"
+    }
+  }
+]
