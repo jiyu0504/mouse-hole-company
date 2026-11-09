@@ -347,9 +347,12 @@ function renderStars() {
   $("#starText").textContent = state.rating ? "★".repeat(state.rating) + "☆".repeat(5 - state.rating) + ` (${state.rating}점)` : "";
 }
 function setStarOpen(open) {
-  $("#starList").hidden = !open;
-  $("#starToggle").setAttribute("aria-expanded", String(open));
-  $("#starToggle .dd-caret").textContent = open ? "▲" : "▼";
+  const list = $("#starList"), toggle = $("#starToggle");
+  if (!list || !toggle) return;
+  list.hidden = !open;
+  toggle.setAttribute("aria-expanded", String(open));
+  const caret = $(".dd-caret", toggle);
+  if (caret) caret.textContent = open ? "▲" : "▼";
 }
 function resetReviewForm() {
   $("#reviewFormEl").reset();
