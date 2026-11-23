@@ -29,7 +29,7 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "bde590551b8e0ccd1f3b7257cf7305e9",
+  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
   leaflet: {
     js: "data/map/leaflet/leaflet.js",
     css: "data/map/leaflet/leaflet.css",
