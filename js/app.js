@@ -421,7 +421,7 @@ function renderDetail({ kind, id }, fresh) {
     ${mapCard(item)}${nearbyBlock}${reviewBlock}`;
   mountMap(item);
 
-  setHeaderAction(isCafe ? `<button type="button" class="btn dark" data-fav="${item.id}" aria-pressed="${state.favorites.includes(item.id)}">${state.favorites.includes(item.id) ? "♥ 찜함" : "찜하기"}</button>` : "");
+  setHeaderAction(isCafe ? `<button type="button" class="btn dark" data-fav="${item.id}" aria-pressed="${isFav(item.id)}">${isFav(item.id) ? "♥ 찜함" : "찜하기"}</button>` : "");
 }
 
 function renderIdList(containerId, ids, emptyText) {
@@ -433,12 +433,12 @@ function renderProfile() {
   const u = state.user;
   const large = cafes.filter(c => c.sizes.includes("대형견"));
   const rec = large.filter(c => c.region === u.region).sort((a, b) => (ratingOf(b).avg ?? -1) - (ratingOf(a).avg ?? -1))[0] || large[0] || cafes[0];
-  const recent = state.recent.map(id => cafes.find(c => c.id === id)).filter(Boolean).slice(0, 2);
+  const favs = state.favorites.map(id => cafes.find(c => c.id === id)).filter(Boolean).slice(0, 2);
   $("#profileContent").innerHTML = `
     <div class="profile-row"><div class="ph" aria-hidden="true"></div><div><strong>${esc(u.name)}님</strong><small>${esc(u.pet)}주, 서울 ${esc(u.region)}</small></div><span class="arrow" aria-hidden="true">&gt;</span></div>
     <div class="profile-section"><button type="button" class="section-link" data-go="cafes">맞춤 추천 &gt;</button>${rec ? rowCard(rec, true) : ""}</div>
-    <div class="profile-section"><button type="button" class="section-link" data-go="recent">최근 본 매장 &gt;</button>
-      <div class="stack">${recent.length ? recent.map(c => rowCard(c)).join("") : emptyBox("최근 본 매장이 없어요")}</div></div>`;
+    <div class="profile-section"><button type="button" class="section-link" data-go="favorites">찜한 매장 &gt;</button>
+      <div class="stack">${favs.length ? favs.map(c => rowCard(c)).join("") : emptyBox("찜한 매장이 없어요")}</div></div>`;
 }
 
 /* ---------- 별점 / 후기 폼 ---------- */
@@ -512,6 +512,7 @@ document.addEventListener("click", e => {
 
   const fav = t.closest("[data-fav]");
   if (fav) {
+    if (!state.user) { toast("로그인하면 찜할 수 있어요."); return; }
     const id = Number(fav.dataset.fav);
     state.favorites = state.favorites.includes(id) ? state.favorites.filter(n => n !== id) : [...state.favorites, id];
     store("favorites", state.favorites);
