@@ -27,9 +27,9 @@ const PAGE_SIZE = 20;
  *   - 새 지도를 추가하려면 MAP_PROVIDERS에 { load(), render(el, item) } 객체 하나만 더 넣으면 된다
  * ========================================================================== */
 const MAP_CONFIG = {
-  provider: "leaflet",
+  provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "",
+  kakaoAppKey: "bde590551b8e0ccd1f3b7257cf7305e9",
   leaflet: {
     js: "data/map/leaflet/leaflet.js",
     css: "data/map/leaflet/leaflet.css",
