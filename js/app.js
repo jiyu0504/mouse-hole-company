@@ -31,8 +31,8 @@ const MAP_CONFIG = {
   zoom: 16,
   kakaoAppKey: "",
   leaflet: {
-    js: "lib/leaflet/leaflet.js",
-    css: "lib/leaflet/leaflet.css",
+    js: "data/map/leaflet/leaflet.js",
+    css: "data/map/leaflet/leaflet.css",
     tiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     attribution: "&copy; OpenStreetMap"
   }
