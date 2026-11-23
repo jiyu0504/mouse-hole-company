@@ -307,8 +307,9 @@ function photo(item, cls) {
 }
 const chipRow = item => `<div class="chip-row">${item.tags.slice(0, 2).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>`;
 const regionLine = item => `서울 ${item.region}${item.dong ? " " + item.dong : ""}`;
+const isFav = id => !!state.user && state.favorites.includes(id);
 const favButton = cafe => {
-  const on = state.favorites.includes(cafe.id);
+  const on = isFav(cafe.id);
   return `<button type="button" class="btn ${on ? "saved" : ""}" data-fav="${cafe.id}" aria-pressed="${on}">${on ? "♥ 찜함" : "찜하기"}</button>`;
 };
 
