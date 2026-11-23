@@ -458,7 +458,7 @@ function resetReviewForm() {
 }
 
 /* ---------- 라우팅 ---------- */
-const VIEW_TAB = { home: "home", cafes: "cafes", attractions: "attractions", favorites: "favorites", profile: "profile", login: "profile", signup: "profile", recent: "profile" };
+const VIEW_TAB = { home: "home", cafes: "cafes", attractions: "attractions", recent: "recent", favorites: "profile", profile: "profile", login: "profile", signup: "profile", recent: "profile" };
 function tabFor(view, params) {
   if (VIEW_TAB[view]) return VIEW_TAB[view];
   if (view === "filter") return params.from === "attractions" ? "attractions" : "cafes";
@@ -483,7 +483,7 @@ function renderView(view, params, fresh) {
 }
 
 function navigate(view, params = {}, opts = {}) {
-  if (view === "profile" && !state.user) view = "login";
+  if ((view === "profile"|| view === "favorites") && !state.user) view = "login";
   if (!$("#" + view)) view = "home";
   state.current = { view, params };
   state.tab = tabFor(view, params);
