@@ -12,8 +12,106 @@
  * ※ fetch를 쓰므로 index.html을 더블클릭(file://)하지 말고 로컬 서버로 열어야 한다.
  */
 
-const DATA_FILES = { cafes: "data/dog_cafes.json", places: "data/outdoor_facilities.json" };
+const DATA_FILES = { cafes: "data/dog_cafes.json", places: "data/outdoor_facilities.json" }  /* 경로는 index.html 기준 */;
 const PAGE_SIZE = 20;
+
+/* ==========================================================================
+ * 지도 (상세 화면의 '위치' 카드)
+ * --------------------------------------------------------------------------
+ * ★ 지도 종류/모양을 바꾸고 싶으면 이 블록만 고치면 된다.
+ *   - provider : "leaflet" → OpenStreetMap 지도. 앱 키 없이 무료로 동작 (지금 기본값)
+ *                "kakao"   → 카카오맵. 아래 kakaoAppKey에 JavaScript 키를 넣고, 카카오 개발자 콘솔의
+ *                            [플랫폼 > Web]에 사이트 주소(예: https://아이디.github.io)를 등록해야 동작
+ *   - 지도 높이/핀 색/모서리 : css/style.css 맨 위 토큰(--map-height, --map-pin-color ...)
+ *   - 지도 카드의 위치(순서) : renderDetail() 안의 ${mapCard(item)} 한 줄을 옮기면 된다
+ *   - 새 지도를 추가하려면 MAP_PROVIDERS에 { load(), render(el, item) } 객체 하나만 더 넣으면 된다
+ * ========================================================================== */
+const MAP_CONFIG = {
+  provider: "leaflet",
+  zoom: 16,
+  kakaoAppKey: "",
+  leaflet: {
+    js: "lib/leaflet/leaflet.js",
+    css: "lib/leaflet/leaflet.css",
+    tiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    attribution: "&copy; OpenStreetMap"
+  }
+};
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src; el.onload = resolve; el.onerror = () => reject(new Error("스크립트 로드 실패: " + src));
+    document.head.appendChild(el);
+  });
+}
+function loadStyle(href) {
+  if ($(`link[href="${href}"]`)) return;
+  const el = document.createElement("link");
+  el.rel = "stylesheet"; el.href = href;
+  document.head.appendChild(el);
+}
+
+const MAP_PROVIDERS = {
+  leaflet: {
+    load() {
+      const c = MAP_CONFIG.leaflet;
+      loadStyle(c.css);
+      return window.L ? Promise.resolve() : loadScript(c.js);
+    },
+    render(el, item) {
+      const c = MAP_CONFIG.leaflet, pos = [item.lat, item.lng];
+      const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, dragging: !L.Browser.mobile, attributionControl: true }).setView(pos, MAP_CONFIG.zoom);
+      L.tileLayer(c.tiles, { maxZoom: 19, attribution: c.attribution }).addTo(map);
+      L.marker(pos, { title: item.name, icon: L.divIcon({ className: "map-pin", iconSize: null })   /* 크기는 CSS(--map-pin-size) */ }).addTo(map);
+      setTimeout(() => map.invalidateSize(), 0);
+      return () => map.remove();                       // 정리 함수
+    }
+  },
+  kakao: {   // ※ 아직 실제 키로 테스트하지 않은 코드. 키 발급 후 확인 필요
+    load() {
+      if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
+      if (window.kakao?.maps?.LatLng) return Promise.resolve();
+      return loadScript(`https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(MAP_CONFIG.kakaoAppKey)}&autoload=false`)
+        .then(() => new Promise(res => kakao.maps.load(res)));
+    },
+    render(el, item) {
+      const pos = new kakao.maps.LatLng(item.lat, item.lng);
+      const map = new kakao.maps.Map(el, { center: pos, level: 3 });
+      new kakao.maps.Marker({ position: pos, map });
+      setTimeout(() => map.relayout(), 0);
+      return () => { el.innerHTML = ""; };
+    }
+  }
+};
+
+let destroyMapFn = null;
+function destroyMap() { if (destroyMapFn) { try { destroyMapFn(); } catch (e) { /* 무시 */ } destroyMapFn = null; } }
+
+/* 위치 카드 HTML. 좌표가 없는 항목은 카드를 그리지 않는다. */
+function mapCard(item) {
+  if (item.lat == null || item.lng == null) return "";
+  const route = `https://map.kakao.com/link/to/${encodeURIComponent(item.name)},${item.lat},${item.lng}`;   // 키 없이 쓰는 카카오맵 길찾기 링크
+  return `<div class="info-card map-card">
+    <div class="map-head"><h3>위치</h3><a class="btn dark" href="${esc(route)}" target="_blank" rel="noopener noreferrer">길찾기</a></div>
+    <div class="map-box" id="mapBox" role="region" aria-label="${esc(item.name)} 위치 지도"><span class="map-status">지도를 불러오는 중…</span></div>
+    <p class="sub">${esc(item.address)}</p>
+  </div>`;
+}
+/* 위치 카드가 화면에 들어온 뒤 호출 */
+function mountMap(item) {
+  const box = $("#mapBox");
+  if (!box) return;
+  const provider = MAP_PROVIDERS[MAP_CONFIG.provider];
+  provider.load().then(() => {
+    if (!box.isConnected) return;                      // 그사이 화면이 바뀐 경우
+    box.innerHTML = "";
+    destroyMapFn = provider.render(box, item);
+  }).catch(err => {
+    console.error(err);
+    box.innerHTML = `<span class="map-status">지도를 불러오지 못했어요. 아래 길찾기 버튼으로 확인해 주세요.</span>`;
+  });
+}
 
 /* ---------- 필터 그룹 (필터 화면 / 와이어프레임 기준) ---------- */
 const FILTER_GROUPS = [
@@ -319,7 +417,8 @@ function renderDetail({ kind, id }, fresh) {
       <dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
     </div>
     <div class="info-card"><h3>영업시간</h3><p>${esc(item.closedDays)}</p><p>${esc(item.hoursText)}</p></div>
-    ${nearbyBlock}${reviewBlock}`;
+    ${mapCard(item)}${nearbyBlock}${reviewBlock}`;
+  mountMap(item);
 
   setHeaderAction(isCafe ? `<button type="button" class="btn dark" data-fav="${item.id}" aria-pressed="${state.favorites.includes(item.id)}">${state.favorites.includes(item.id) ? "♥ 찜함" : "찜하기"}</button>` : "");
 }
@@ -348,11 +447,10 @@ function renderStars() {
 }
 function setStarOpen(open) {
   const list = $("#starList"), toggle = $("#starToggle");
-  if (!list || !toggle) return;
+  if (!list || !toggle) return;            // 후기 작성 화면이 없는 HTML이어도 오류 없이 넘어감
   list.hidden = !open;
   toggle.setAttribute("aria-expanded", String(open));
-  const caret = $(".dd-caret", toggle);
-  if (caret) caret.textContent = open ? "▲" : "▼";
+  const caret = $(".dd-caret", toggle); if (caret) caret.textContent = open ? "▲" : "▼";
 }
 function resetReviewForm() {
   $("#reviewFormEl").reset();
@@ -368,6 +466,7 @@ function tabFor(view, params) {
 }
 
 function renderView(view, params, fresh) {
+  destroyMap();
   closeDropdowns();
   setHeaderAction("");
   switch (view) {
