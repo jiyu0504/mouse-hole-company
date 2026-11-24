@@ -29,8 +29,22 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
- };
+  kakaoAppKey: "",
+  leaflet: {
+    js: "data/map/leaflet/leaflet.js",
+    css: "data/map/leaflet/leaflet.css",
+    tiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    attribution: "&copy; OpenStreetMap"
+  }
+};
+
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src; el.onload = resolve; el.onerror = () => reject(new Error("스크립트 로드 실패: " + src));
+    document.head.appendChild(el);
+  });
+}
 function loadStyle(href) {
   if ($(`link[href="${href}"]`)) return;
   const el = document.createElement("link");
@@ -39,7 +53,22 @@ function loadStyle(href) {
 }
 
 const MAP_PROVIDERS = {
-  kakao: {
+  leaflet: {
+    load() {
+      const c = MAP_CONFIG.leaflet;
+      loadStyle(c.css);
+      return window.L ? Promise.resolve() : loadScript(c.js);
+    },
+    render(el, item) {
+      const c = MAP_CONFIG.leaflet, pos = [item.lat, item.lng];
+      const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, dragging: !L.Browser.mobile, attributionControl: true }).setView(pos, MAP_CONFIG.zoom);
+      L.tileLayer(c.tiles, { maxZoom: 19, attribution: c.attribution }).addTo(map);
+      L.marker(pos, { title: item.name, icon: L.divIcon({ className: "map-pin", iconSize: null })   /* 크기는 CSS(--map-pin-size) */ }).addTo(map);
+      setTimeout(() => map.invalidateSize(), 0);
+      return () => map.remove();                       // 정리 함수
+    }
+  },
+  kakao: {   // ※ 아직 실제 키로 테스트하지 않은 코드. 키 발급 후 확인 필요
     load() {
       if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
       if (window.kakao?.maps?.LatLng) return Promise.resolve();
