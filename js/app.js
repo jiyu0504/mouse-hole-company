@@ -29,22 +29,8 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
-  leaflet: {
-    js: "data/map/leaflet/leaflet.js",
-    css: "data/map/leaflet/leaflet.css",
-    tiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    attribution: "&copy; OpenStreetMap"
-  }
-};
-
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const el = document.createElement("script");
-    el.src = src; el.onload = resolve; el.onerror = () => reject(new Error("스크립트 로드 실패: " + src));
-    document.head.appendChild(el);
-  });
-}
+  kakaoAppKey: "",
+ };
 function loadStyle(href) {
   if ($(`link[href="${href}"]`)) return;
   const el = document.createElement("link");
@@ -53,13 +39,7 @@ function loadStyle(href) {
 }
 
 const MAP_PROVIDERS = {
-  leaflet: {
-    load() {
-      const c = MAP_CONFIG.leaflet;
-      loadStyle(c.css);
-      return window.L ? Promise.resolve() : loadScript(c.js);
-    },
-    render(el, item) {
+     render(el, item) {
       const c = MAP_CONFIG.leaflet, pos = [item.lat, item.lng];
       const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, dragging: !L.Browser.mobile, attributionControl: true }).setView(pos, MAP_CONFIG.zoom);
       L.tileLayer(c.tiles, { maxZoom: 19, attribution: c.attribution }).addTo(map);
@@ -307,7 +287,7 @@ function photo(item, cls) {
 }
 const chipRow = item => `<div class="chip-row">${item.tags.slice(0, 2).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>`;
 const regionLine = item => `서울 ${item.region}${item.dong ? " " + item.dong : ""}`;
-const isFav = id => !!state.user && state.favorites.includes(id);
+const isFav = id => !!state.user && state.favorites.includes(id);   // 로그인한 경우에만 찜 상태로 본다
 const favButton = cafe => {
   const on = isFav(cafe.id);
   return `<button type="button" class="btn ${on ? "saved" : ""}" data-fav="${cafe.id}" aria-pressed="${on}">${on ? "♥ 찜함" : "찜하기"}</button>`;
@@ -429,16 +409,77 @@ function renderIdList(containerId, ids, emptyText) {
   $("#" + containerId).innerHTML = list.length ? list.map(c => rowCard(c)).join("") : emptyBox(emptyText);
 }
 
-function renderProfile() {
+/* ---------- 내 정보 (강아지 크기 + 사는 지역) ----------
+ * - 크기(복수 선택 가능)와 지역은 '둘 다 입력' 또는 '둘 다 비움'만 허용
+ * - 지역은 서울 25개 구 + "서울 외" 중 하나
+ * - 로그인이 데모라서 정보는 브라우저(localStorage)에 아이디별로 저장. 서버가 생기면 saveProfile/loadProfile만 교체
+ */
+const DOG_SIZES = ["소형견", "중형견", "대형견"];
+const OUTSIDE = "서울 외";
+const SEOUL_GU = ["강남구", "강동구", "강북구", "강서구", "관악구", "광진구", "구로구", "금천구", "노원구", "도봉구", "동대문구", "동작구", "마포구", "서대문구", "서초구", "성동구", "성북구", "송파구", "양천구", "영등포구", "용산구", "은평구", "종로구", "중구", "중랑구"];
+const hasProfile = u => !!u && u.sizes.length > 0 && !!u.region;
+const regionText = r => (r === OUTSIDE ? OUTSIDE : "서울 " + r);
+const profileLabel = u => `${u.sizes.map(z => z.replace("견", "")).join("·")}견주, ${regionText(u.region)}`;
+
+/* ---------- 아이디 / 닉네임 규칙 (여기만 고치면 규칙이 바뀐다) ----------
+ * 아이디 : 영문 + 숫자만, 4~20자 (로그인에 쓰는 값)
+ * 닉네임 : 한글/특수문자/이모지 모두 가능, 2~12자 (화면에 보이는 이름)
+ */
+const ID_PATTERN = /^[A-Za-z0-9]{4,20}$/;
+const ID_RULE_TEXT = "아이디는 영문과 숫자만 사용해 4~20자로 입력해 주세요.";
+const NICK_MIN = 2, NICK_MAX = 12;
+const nickLength = t => Array.from(t).length;                       // 이모지도 1글자로 센다
+const NICK_RULE_TEXT = `닉네임은 ${NICK_MIN}~${NICK_MAX}자로 입력해 주세요.`;
+const isValidNick = t => nickLength(t) >= NICK_MIN && nickLength(t) <= NICK_MAX && !/[\u0000-\u001F\u007F]/.test(t);
+
+function loadProfile(id) {
+  const saved = store("profile:" + id) || {};
+  const nickname = typeof saved.nickname === "string" && isValidNick(saved.nickname) ? saved.nickname : id;   // 닉네임이 없으면 아이디를 대신 보여줌
+  const sizes = DOG_SIZES.filter(z => Array.isArray(saved.sizes) && saved.sizes.includes(z));   // 소형·중형·대형 순서로 정리
+  const region = SEOUL_GU.includes(saved.region) || saved.region === OUTSIDE ? saved.region : "";
+  return sizes.length && region ? { nickname, sizes, region } : { nickname, sizes: [], region: "" };               // 한쪽만 있으면 없는 것으로 취급
+}
+function saveProfile(u) { store("profile:" + u.id, { nickname: u.nickname, sizes: u.sizes, region: u.region }); }
+
+/* 내 정보를 목록 필터에 미리 적용 (로그인 직후 / 정보 저장 직후) */
+function applyProfileFilters() {
+  resetFilters();
+  state.limit = { cafes: PAGE_SIZE, places: PAGE_SIZE };
   const u = state.user;
-  const large = cafes.filter(c => c.sizes.includes("대형견"));
-  const rec = large.filter(c => c.region === u.region).sort((a, b) => (ratingOf(b).avg ?? -1) - (ratingOf(a).avg ?? -1))[0] || large[0] || cafes[0];
+  if (hasProfile(u)) {
+    state.filters.sizes = [...u.sizes];
+    if (SEOUL_GU.includes(u.region)) state.filters.region = u.region;     // "서울 외"는 지역 필터 없음
+  }
+  dropdowns.forEach(d => d.render());
+}
+
+function renderProfile() {
+  const u = state.user, has = hasProfile(u);
+  const rate = c => ratingOf(c).avg ?? -1;
+  let recBlock;
+  if (!has) {
+    recBlock = `<div class="empty-box">강아지 크기와 사는 지역을 입력하면<br>맞춤 추천을 받을 수 있어요.<br><button type="button" class="link-btn" data-go="profileEdit">정보 입력하기</button></div>`;
+  } else {
+    const fits = cafes.filter(c => u.sizes.every(z => c.sizes.includes(z)));          // 키우는 강아지가 모두 들어갈 수 있는 곳
+    const local = SEOUL_GU.includes(u.region) ? fits.filter(c => c.region === u.region) : [];
+    const rec = [...local].sort((a, b) => rate(b) - rate(a))[0] || [...fits].sort((a, b) => rate(b) - rate(a))[0];
+    recBlock = rec ? rowCard(rec, true) : emptyBox("조건에 맞는 카페가 없어요");
+  }
   const favs = state.favorites.map(id => cafes.find(c => c.id === id)).filter(Boolean).slice(0, 2);
   $("#profileContent").innerHTML = `
-    <div class="profile-row"><div class="ph" aria-hidden="true"></div><div><strong>${esc(u.name)}님</strong><small>${esc(u.pet)}주, 서울 ${esc(u.region)}</small></div><span class="arrow" aria-hidden="true">&gt;</span></div>
-    <div class="profile-section"><button type="button" class="section-link" data-go="cafes">맞춤 추천 &gt;</button>${rec ? rowCard(rec, true) : ""}</div>
+    <button type="button" class="profile-row" data-go="profileEdit"><span class="ph avatar" aria-hidden="true"></span><span class="profile-text"><strong>${esc(u.nickname)}님</strong><small>${has ? esc(profileLabel(u)) : "내 강아지 정보를 입력해 보세요"}</small></span><span class="arrow" aria-hidden="true">&gt;</span></button>
+    <div class="profile-section"><button type="button" class="section-link" data-go="cafes">맞춤 추천 &gt;</button>${recBlock}</div>
     <div class="profile-section"><button type="button" class="section-link" data-go="favorites">찜한 매장 &gt;</button>
-      <div class="stack">${favs.length ? favs.map(c => rowCard(c)).join("") : emptyBox("찜한 매장이 없어요")}</div></div>`;
+      <div class="stack">${favs.length ? favs.map(c => rowCard(c)).join("") : emptyBox("찜한 매장 없음")}</div></div>`;
+}
+
+/* 내 정보 입력/수정 화면 */
+let profileRegionDd = null;
+function renderProfileEdit() {
+  const u = state.user;
+  state.draftRegion = u.region || "";
+  $$('#profileForm input[name="dogSize"]').forEach(b => { b.checked = u.sizes.includes(b.value); });
+  profileRegionDd && profileRegionDd.render();
 }
 
 /* ---------- 별점 / 후기 폼 ---------- */
@@ -459,7 +500,7 @@ function resetReviewForm() {
 }
 
 /* ---------- 라우팅 ---------- */
-const VIEW_TAB = { home: "home", cafes: "cafes", attractions: "attractions", recent: "recent", favorites: "profile", profile: "profile", login: "profile", signup: "profile", recent: "profile" };
+const VIEW_TAB = { home: "home", cafes: "cafes", attractions: "attractions", recent: "recent", favorites: "profile", profile: "profile", profileEdit: "profile", login: "profile", signup: "profile" };
 function tabFor(view, params) {
   if (VIEW_TAB[view]) return VIEW_TAB[view];
   if (view === "filter") return params.from === "attractions" ? "attractions" : "cafes";
@@ -480,11 +521,12 @@ function renderView(view, params, fresh) {
     case "recent": renderIdList("recentCards", state.recent, "최근 본 매장이 없어요"); break;
     case "favorites": renderIdList("favoriteCards", state.favorites, "찜한 매장 없음"); break;
     case "profile": renderProfile(); break;
+    case "profileEdit": if (fresh) renderProfileEdit(); break;
   }
 }
 
 function navigate(view, params = {}, opts = {}) {
-  if ((view === "profile"|| view === "favorites") && !state.user) view = "login";
+  if ((view === "profile" || view === "favorites" || view === "profileEdit") && !state.user) view = "login";   // MY / 찜한 매장은 로그인 필요
   if (!$("#" + view)) view = "home";
   state.current = { view, params };
   state.tab = tabFor(view, params);
@@ -512,7 +554,7 @@ document.addEventListener("click", e => {
 
   const fav = t.closest("[data-fav]");
   if (fav) {
-    if (!state.user) { toast("로그인하면 찜할 수 있어요."); return; }
+    if (!state.user) { toast("로그인하면 찜할 수 있어요."); return; }   // 게스트: 안내만 띄우고 현재 화면 유지
     const id = Number(fav.dataset.fav);
     state.favorites = state.favorites.includes(id) ? state.favorites.filter(n => n !== id) : [...state.favorites, id];
     store("favorites", state.favorites);
@@ -554,22 +596,42 @@ $("#reviewFormEl").addEventListener("submit", async e => {
     if (file.size > 5 * 1024 * 1024) { toast("사진은 5MB 이하만 올릴 수 있어요."); return; }
     image = await new Promise(res => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(file); });
   }
-  reviews.push({ id: Math.max(0, ...reviews.map(r => r.id)) + 1, cafeId: state.reviewTarget, author: state.user?.name || "방문자", rating: state.rating, content, image, date: new Date().toISOString().slice(0, 10) });
+  reviews.push({ id: Math.max(0, ...reviews.map(r => r.id)) + 1, cafeId: state.reviewTarget, author: state.user?.nickname || "방문자", rating: state.rating, content, image, date: new Date().toISOString().slice(0, 10) });
   toast("후기가 등록되었어요. (현재 화면의 임시 데이터)");
   navigate("detail", { kind: "cafe", id: state.reviewTarget, tab: state.current.params.tab });
+});
+
+$("#profileForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const sizes = DOG_SIZES.filter(z => $$('#profileForm input[name="dogSize"]').some(b => b.checked && b.value === z));
+  const region = state.draftRegion || "";
+  if ((sizes.length > 0) !== !!region) { toast("강아지 크기와 사는 지역을 함께 입력해 주세요."); return; }   // 둘 다 입력하거나 둘 다 비우기
+  state.user.sizes = sizes; state.user.region = region;
+  saveProfile(state.user);
+  applyProfileFilters();
+  toast(sizes.length ? "내 정보를 저장했어요." : "내 정보를 지웠어요.");
+  navigate("profile");
 });
 
 $("#loginForm").addEventListener("submit", e => {
   e.preventDefault();
   // 데모 로그인 : 서버 인증 없이 입력한 아이디로 로그인 상태를 만든다.
-  state.user = { name: $("#loginId").value.trim(), pet: "대형견", region: "양천구" };
+  const id = $("#loginId").value.trim();
+  if (!ID_PATTERN.test(id)) { toast(ID_RULE_TEXT); return; }
+  state.user = { id, ...loadProfile(id) };              // nickname, sizes, region
+  applyProfileFilters();                                // 내 지역/강아지 크기를 목록에 미리 선택
   $("#loginForm").reset();
   toast("로그인되었어요. (데모)");
   navigate("profile");
 });
 $("#signupForm").addEventListener("submit", e => {
   e.preventDefault();
+  const id = $("#signupId").value.trim(), nickname = $("#signupNickname").value.trim();
+  if (!ID_PATTERN.test(id)) { toast(ID_RULE_TEXT); return; }
+  if (!isValidNick(nickname)) { toast(NICK_RULE_TEXT); return; }
   if ($("#signupPassword").value !== $("#signupPasswordConfirm").value) { toast("비밀번호가 일치하지 않아요."); return; }
+  if (store("profile:" + id)) { toast("이미 사용 중인 아이디예요."); return; }       // 데모: 이 브라우저에 저장된 아이디 기준
+  store("profile:" + id, { nickname, sizes: [], region: "" });
   $("#signupForm").reset();
   toast("회원가입이 완료되었어요. 로그인해 주세요. (데모)");
   navigate("login");
@@ -598,6 +660,13 @@ async function init() {
   regionDropdown("#ddCafeRegion", false);
   regionDropdown("#ddPlaceRegion", false);
   regionDropdown("#ddFilterRegion", true);
+  profileRegionDd = createDropdown($("#ddProfileRegion"), {
+    caret: true,
+    label: () => state.draftRegion ? regionText(state.draftRegion) : "지역 선택",
+    value: () => state.draftRegion || "",
+    options: () => [{ value: "", text: "선택 안 함" }, ...SEOUL_GU.map(g => ({ value: g, text: "서울 " + g })), { value: OUTSIDE, text: OUTSIDE }],
+    onSelect: v => { state.draftRegion = v; profileRegionDd.render(); }
+  });
   createDropdown($("#ddFilterDong"), {
     caret: true,
     label: () => state.filters.dong || "세부 지역",
