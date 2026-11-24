@@ -39,16 +39,7 @@ function loadStyle(href) {
 }
 
 const MAP_PROVIDERS = {
-     render(el, item) {
-      const c = MAP_CONFIG.leaflet, pos = [item.lat, item.lng];
-      const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, dragging: !L.Browser.mobile, attributionControl: true }).setView(pos, MAP_CONFIG.zoom);
-      L.tileLayer(c.tiles, { maxZoom: 19, attribution: c.attribution }).addTo(map);
-      L.marker(pos, { title: item.name, icon: L.divIcon({ className: "map-pin", iconSize: null })   /* 크기는 CSS(--map-pin-size) */ }).addTo(map);
-      setTimeout(() => map.invalidateSize(), 0);
-      return () => map.remove();                       // 정리 함수
-    }
-  },
-  kakao: {  
+  kakao: {
     load() {
       if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
       if (window.kakao?.maps?.LatLng) return Promise.resolve();
