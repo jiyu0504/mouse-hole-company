@@ -29,7 +29,7 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "",
+  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
   leaflet: {
     js: "data/map/leaflet/leaflet.js",
     css: "data/map/leaflet/leaflet.css",
@@ -68,7 +68,7 @@ const MAP_PROVIDERS = {
       return () => map.remove();                       // 정리 함수
     }
   },
-  kakao: {   // ※ 아직 실제 키로 테스트하지 않은 코드. 키 발급 후 확인 필요
+  kakao: {  
     load() {
       if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
       if (window.kakao?.maps?.LatLng) return Promise.resolve();
