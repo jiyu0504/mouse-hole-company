@@ -29,7 +29,7 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "",
+  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
  };
 function loadStyle(href) {
   if ($(`link[href="${href}"]`)) return;
