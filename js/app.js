@@ -48,7 +48,7 @@ const MAP_PROVIDERS = {
       return () => map.remove();                       // 정리 함수
     }
   },
-  kakao: {   // ※ 아직 실제 키로 테스트하지 않은 코드. 키 발급 후 확인 필요
+  kakao: {  
     load() {
       if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
       if (window.kakao?.maps?.LatLng) return Promise.resolve();
