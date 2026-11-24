@@ -93,7 +93,7 @@
           <div class="auth-panel">
             <div class="ph auth-img" aria-hidden="true"></div>
             <label for="loginId" class="bar-label">아이디</label>
-            <input id="loginId" required autocomplete="username">
+            <input id="loginId" required maxlength="20" autocomplete="username" autocapitalize="none" spellcheck="false">
             <label for="loginPassword" class="bar-label">비밀번호</label>
             <input id="loginPassword" type="password" required autocomplete="current-password">
           </div>
@@ -107,8 +107,11 @@
         <form id="signupForm" class="auth-form">
           <div class="auth-panel">
             <div class="ph auth-img" aria-hidden="true"></div>
+            <p class="auth-hint">아이디는 영문·숫자 4~20자, 닉네임은 한글·특수문자도 가능해요 (2~12자).</p>
             <label for="signupId" class="bar-label">아이디</label>
-            <input id="signupId" required autocomplete="username">
+            <input id="signupId" required maxlength="20" autocomplete="username" autocapitalize="none" spellcheck="false">
+            <label for="signupNickname" class="bar-label">닉네임</label>
+            <input id="signupNickname" required maxlength="12" autocomplete="nickname">
             <label for="signupPassword" class="bar-label">비밀번호</label>
             <input id="signupPassword" type="password" required autocomplete="new-password">
             <label for="signupPasswordConfirm" class="bar-label">비밀번호 확인</label>
@@ -122,6 +125,25 @@
       <!-- MY -->
       <section id="profile" class="view">
         <div id="profileContent"></div>
+      </section>
+
+      <!-- 내 정보 입력/수정 (MY) -->
+      <section id="profileEdit" class="view">
+        <form id="profileForm" novalidate>
+          <div class="review-panel">
+            <h2>내 강아지 정보</h2>
+            <p class="hint">크기와 사는 지역은 함께 입력하거나, 모두 비워 둘 수 있어요.</p>
+            <fieldset class="check-field">
+              <legend class="field-label">강아지 크기 (중복 선택 가능)</legend>
+              <label class="check"><input type="checkbox" name="dogSize" value="소형견"> 소형견</label>
+              <label class="check"><input type="checkbox" name="dogSize" value="중형견"> 중형견</label>
+              <label class="check"><input type="checkbox" name="dogSize" value="대형견"> 대형견</label>
+            </fieldset>
+            <span class="field-label">사는 지역</span>
+            <div id="ddProfileRegion" class="dd dark"></div>
+          </div>
+          <button type="submit" class="btn wide">저장하기</button>
+        </form>
       </section>
 
       <!-- 최근 본 매장 -->
@@ -138,7 +160,7 @@
     </main>
   </div>
 
-  <!-- 하단 탭: 홈 / 카페 목록 / 명소 / 찜 / MY -->
+  <!-- 하단 탭: 홈 / 카페 목록 / 명소 / 최근 본 매장 / MY -->
   <nav class="bottom-nav" aria-label="하단 메뉴">
     <button type="button" data-go="home" data-tab="home">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg><span class="sr-only">홈</span>
