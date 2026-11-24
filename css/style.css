@@ -100,9 +100,6 @@
   --avatar-size: 40px;
   --icon-size: 26px;                 /* 하단 탭 아이콘 */
   --map-height: 200px;               /* 상세 화면 지도 높이 */
-  --map-pin-size: 20px;              /* 지도 핀 크기 */
-  --map-pin-color: var(--color-primary-strong);  /* 지도 핀 색 */
-
   font-family: var(--font-sans);
   color: var(--text);
 }
@@ -283,11 +280,11 @@ main { padding: var(--sp-1) var(--page-gutter) var(--nav-clearance); min-height:
 .auth-panel input:last-child { margin-bottom: 0; }
 
 /* ========================== MY ========================== */
-.profile-row { display: flex; align-items: center; gap: var(--sp-4); padding: var(--sp-2) 0 var(--sp-6); }
-.profile-row .ph { width: var(--avatar-size); height: var(--avatar-size); flex: none; }
-.profile-row div { flex: 1; min-width: 0; }
+.profile-row { display: flex; align-items: center; gap: var(--sp-4); width: 100%; padding: var(--sp-2) 0 var(--sp-6); border: 0; background: transparent; text-align: left; }
+.profile-row .ph { display: block; width: var(--avatar-size); height: var(--avatar-size); flex: none; }
+.profile-text { flex: 1; min-width: 0; }
 .profile-row strong { display: block; font-size: var(--fs-2xl); font-weight: var(--fw-medium); }
-.profile-row small { font-size: var(--fs-xs); color: var(--text-muted); }
+.profile-row small { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
 .profile-row .arrow { flex: none; font-size: var(--fs-lg); }
 .section-link { display: block; border: 0; background: transparent; padding: var(--sp-4) 0 var(--sp-2); font-size: var(--fs-xl); font-weight: var(--fw-medium); }
 .profile-section + .profile-section { margin-top: var(--sp-4); }
@@ -315,6 +312,10 @@ main { padding: var(--sp-1) var(--page-gutter) var(--nav-clearance); min-height:
 .map-head .btn { font-size: var(--fs-sm); padding: var(--sp-2) var(--sp-4); text-decoration: none; }
 .map-box { position: relative; isolation: isolate; height: var(--map-height); margin-top: var(--sp-3); background: var(--surface-card); border: var(--border-width) solid var(--border); border-radius: var(--radius-card); overflow: hidden; display: grid; place-items: center; }
 .map-status { font-size: var(--fs-md); color: var(--text-muted); padding: var(--sp-5); text-align: center; }
-.map-box.leaflet-container { display: block; font-family: inherit; background: var(--surface-card); }   /* Leaflet은 박스 자체에 이 클래스를 붙인다 */
-.map-box .leaflet-control-attribution { font-size: var(--fs-2xs); }
-.map-pin { width: var(--map-pin-size); height: var(--map-pin-size); margin: calc(var(--map-pin-size) / -2) 0 0 calc(var(--map-pin-size) / -2); background: var(--map-pin-color); border: 3px solid var(--bg-app); border-radius: 50%; box-shadow: var(--shadow-popup); }
+border: 3px solid var(--bg-app); border-radius: 50%; box-shadow: var(--shadow-popup); }
+
+/* ========================== 내 정보 입력 ========================== */
+.check-field { border: 0; margin: 0; padding: 0; min-width: 0; }
+.check-field legend { padding: 0; }
+
+.auth-hint { margin: calc(var(--sp-3) * -1) 0 var(--sp-5); font-size: var(--fs-md); color: var(--text-muted); line-height: var(--lh-relaxed); }
