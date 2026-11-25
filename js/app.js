@@ -19,23 +19,16 @@ const PAGE_SIZE = 20;
  * 지도 (상세 화면의 '위치' 카드)
  * --------------------------------------------------------------------------
  * ★ 지도 종류/모양을 바꾸고 싶으면 이 블록만 고치면 된다.
- *   - provider : "leaflet" → OpenStreetMap 지도. 앱 키 없이 무료로 동작 (지금 기본값)
- *                "kakao"   → 카카오맵. 아래 kakaoAppKey에 JavaScript 키를 넣고, 카카오 개발자 콘솔의
- *                            [플랫폼 > Web]에 사이트 주소(예: https://아이디.github.io)를 등록해야 동작
- *   - 지도 높이/핀 색/모서리 : css/style.css 맨 위 토큰(--map-height, --map-pin-color ...)
+ *   - provider : "kakao" → 카카오맵. 아래 kakaoAppKey에 JavaScript 키를 넣고, 카카오 개발자 콘솔의
+ *                          [플랫폼 > Web]에 사이트 주소(예: https://아이디.github.io)를 등록해야 동작
+ *   - 지도 높이/모서리 : css/style.css 맨 위 토큰(--map-height ...)
  *   - 지도 카드의 위치(순서) : renderDetail() 안의 ${mapCard(item)} 한 줄을 옮기면 된다
  *   - 새 지도를 추가하려면 MAP_PROVIDERS에 { load(), render(el, item) } 객체 하나만 더 넣으면 된다
  * ========================================================================== */
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd",
-  leaflet: {
-    js: "data/map/leaflet/leaflet.js",
-    css: "data/map/leaflet/leaflet.css",
-    tiles: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-    attribution: "&copy; OpenStreetMap"
-  }
+  kakaoAppKey: ""
 };
 
 function loadScript(src) {
@@ -45,30 +38,9 @@ function loadScript(src) {
     document.head.appendChild(el);
   });
 }
-function loadStyle(href) {
-  if ($(`link[href="${href}"]`)) return;
-  const el = document.createElement("link");
-  el.rel = "stylesheet"; el.href = href;
-  document.head.appendChild(el);
-}
 
 const MAP_PROVIDERS = {
-  leaflet: {
-    load() {
-      const c = MAP_CONFIG.leaflet;
-      loadStyle(c.css);
-      return window.L ? Promise.resolve() : loadScript(c.js);
-    },
-    render(el, item) {
-      const c = MAP_CONFIG.leaflet, pos = [item.lat, item.lng];
-      const map = L.map(el, { zoomControl: true, scrollWheelZoom: false, dragging: !L.Browser.mobile, attributionControl: true }).setView(pos, MAP_CONFIG.zoom);
-      L.tileLayer(c.tiles, { maxZoom: 19, attribution: c.attribution }).addTo(map);
-      L.marker(pos, { title: item.name, icon: L.divIcon({ className: "map-pin", iconSize: null })   /* 크기는 CSS(--map-pin-size) */ }).addTo(map);
-      setTimeout(() => map.invalidateSize(), 0);
-      return () => map.remove();                       // 정리 함수
-    }
-  },
-  kakao: {  
+  kakao: {
     load() {
       if (!MAP_CONFIG.kakaoAppKey) return Promise.reject(new Error("kakaoAppKey가 비어 있어요"));
       if (window.kakao?.maps?.LatLng) return Promise.resolve();
@@ -302,9 +274,19 @@ function regionDropdown(id, caret) {
 }
 
 /* ---------- 카드 ---------- */
-function photo(item, cls) {
-  return `<div class="ph ${cls}" role="img" aria-label="${esc(item.name)} 사진 자리"></div>`;
+/* 매장 사진: 아이디로 파일을 찾는다(count장 돌려쓰기). 예) img/cafes/1.jpg ~ 10.jpg, img/places/1.jpg ~ 10.jpg
+   파일이 없으면 기존 X 박스가 그대로 보인다. 확장자/폴더는 여기서만 바꾸면 된다. */
+const PHOTO_CONFIG = { cafe: "img/cafes", place: "img/places", ext: "jpg", count: 10 };   // count: 돌려쓸 사진 장수. 0이면 아이디 그대로 사용
+function photoSrc(item) {
+  const n = PHOTO_CONFIG.count ? ((item.id - 1) % PHOTO_CONFIG.count) + 1 : item.id;     // 아이디를 10으로 나눈 나머지: 1→1번, 2→2번 … 10,20,…→10번
+  return `${PHOTO_CONFIG[item.kind]}/${n}.${PHOTO_CONFIG.ext}`;
 }
+function photo(item, cls) {
+  return `<div class="ph ${cls}" role="img" aria-label="${esc(item.name)} 사진"><img src="${photoSrc(item)}" alt="" loading="lazy"></div>`;
+}
+document.addEventListener("error", e => {          // 사진 파일이 없으면 img만 빼고 X 박스를 보여준다
+  if (e.target.tagName === "IMG" && e.target.closest(".ph")) e.target.remove();
+}, true);
 const chipRow = item => `<div class="chip-row">${item.tags.slice(0, 2).map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>`;
 const regionLine = item => `서울 ${item.region}${item.dong ? " " + item.dong : ""}`;
 const isFav = id => !!state.user && state.favorites.includes(id);   // 로그인한 경우에만 찜 상태로 본다
