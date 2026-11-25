@@ -100,6 +100,7 @@
   --avatar-size: 40px;
   --icon-size: 26px;                 /* 하단 탭 아이콘 */
   --map-height: 200px;               /* 상세 화면 지도 높이 */
+
   font-family: var(--font-sans);
   color: var(--text);
 }
@@ -122,6 +123,8 @@ h1, h2, h3, p { margin: 0; }
   border: var(--border-width) solid var(--placeholder-border);
 }
 .ph.has-photo { background-size: cover; background-position: center; }
+.ph { position: relative; overflow: hidden; }
+.ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; background: var(--surface-card); }
 
 /* ========================== 앱 틀 ========================== */
 .app { width: 100%; max-width: var(--app-max-width); min-height: 100vh; margin: 0 auto; background: var(--bg-app); }
@@ -312,7 +315,6 @@ main { padding: var(--sp-1) var(--page-gutter) var(--nav-clearance); min-height:
 .map-head .btn { font-size: var(--fs-sm); padding: var(--sp-2) var(--sp-4); text-decoration: none; }
 .map-box { position: relative; isolation: isolate; height: var(--map-height); margin-top: var(--sp-3); background: var(--surface-card); border: var(--border-width) solid var(--border); border-radius: var(--radius-card); overflow: hidden; display: grid; place-items: center; }
 .map-status { font-size: var(--fs-md); color: var(--text-muted); padding: var(--sp-5); text-align: center; }
-border: 3px solid var(--bg-app); border-radius: 50%; box-shadow: var(--shadow-popup); }
 
 /* ========================== 내 정보 입력 ========================== */
 .check-field { border: 0; margin: 0; padding: 0; min-width: 0; }
