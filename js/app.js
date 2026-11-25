@@ -28,7 +28,7 @@ const PAGE_SIZE = 20;
 const MAP_CONFIG = {
   provider: "kakao",
   zoom: 16,
-  kakaoAppKey: ""
+  kakaoAppKey: "06a8340835d7d41275b1e817bda8c2dd"
 };
 
 function loadScript(src) {
@@ -276,7 +276,7 @@ function regionDropdown(id, caret) {
 /* ---------- 카드 ---------- */
 /* 매장 사진: 아이디로 파일을 찾는다(count장 돌려쓰기). 예) img/cafes/1.jpg ~ 10.jpg, img/places/1.jpg ~ 10.jpg
    파일이 없으면 기존 X 박스가 그대로 보인다. 확장자/폴더는 여기서만 바꾸면 된다. */
-const PHOTO_CONFIG = { cafe: "img/cafes", place: "img/places", ext: "jpg", count: 10 };   // count: 돌려쓸 사진 장수. 0이면 아이디 그대로 사용
+const PHOTO_CONFIG = { cafe: "data/img/cafe/image", place: "data/img/place/image", ext: "jpg", count: 10 };   // count: 돌려쓸 사진 장수. 0이면 아이디 그대로 사용
 function photoSrc(item) {
   const n = PHOTO_CONFIG.count ? ((item.id - 1) % PHOTO_CONFIG.count) + 1 : item.id;     // 아이디를 10으로 나눈 나머지: 1→1번, 2→2번 … 10,20,…→10번
   return `${PHOTO_CONFIG[item.kind]}/${n}.${PHOTO_CONFIG.ext}`;
